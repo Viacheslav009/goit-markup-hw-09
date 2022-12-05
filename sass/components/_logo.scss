@@ -1,0 +1,34 @@
+.logo {
+    font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700; 
+   font-size: 26px;
+   line-height: calc(31 / 26);
+   letter-spacing: 0.03em;
+   color: var(--accent);
+   margin-right: 93px;
+ }
+ 
+ .logo__item {
+    font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: calc(31 / 26);
+   letter-spacing: 0.03em;
+   color: var(--black);
+ }
+ 
+ .logo--right{
+   margin-right: 93px;
+ }
+ 
+ .logo--bottom{
+   margin-bottom: 20px;
+   display: block;
+ }
+ 
+ .logo--inverse{
+   color: var(--white);
+ }
+ 

@@ -1,0 +1,47 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    fill: #afb1b8;
+  }
+  
+  .socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .socials__icon {
+    fill: currentColor;
+  }
+  
+  .socials__link{
+    &--grey{
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #afb1b8;
+    }
+    
+    
+    &--white{
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+    }
+  }
+  
+  .socials__link{
+    &:hover,
+    &:focus {
+    background-color: var(--accent);
+    color: var(--white);
+            }
+  }
+  
+  

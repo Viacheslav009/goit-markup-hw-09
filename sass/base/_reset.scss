@@ -1,0 +1,33 @@
+ul,
+ol[class],
+li {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+/* убираем отступы у картинок снизу */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* убираем точки в списке */
+ul[class],
+ol[class],
+li {
+  list-style: none;
+}
+
+/* Отменяем подчеркивание у ссылки */
+a {
+  text-decoration: none;
+}

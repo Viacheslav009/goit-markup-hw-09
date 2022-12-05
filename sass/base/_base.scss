@@ -1,0 +1,13 @@
+body { 
+    background-color: var(--white);
+    color: var(--secondary-text-color);
+    font-family: Roboto, Raleway;
+  }
+  .list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .list-item {
+    display: flex;
+    gap: 30px; }
