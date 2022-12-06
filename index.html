@@ -54,27 +54,43 @@
                 <use href="./img/symbol-defs.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a>
           </div>
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg
+              width="40"
+              height="40"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
         
       
-    </header>
+    </header> 
 
     <!--hero-->
     <main>
-      <div class="hero">
+       <div class="hero">
         <section>
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
 
-          <!--<img src="./img/bg.png" alt="bg" width="1600" height="600" />-->
+          <!-- <img src="./img/bg.png" alt="bg" width="1600" height="600" /> -->
           <button data-modal-open type="button" class="basic-button hero__basic-button">
             Замовити послугу</button>
+            </section>
       </div>
 
       <!--<h2>Особливостi</h2>-->
       <section class="section">
         <div class="container">
-          <ul class="peculiarities">
-            <li>
+          <ul class="peculiarities card-set">
+            <li class="card-set__item">
               <div class="peculiarities__box">
                 <svg class="ander-hero-logo" width="70" height="70">
                   <use href="./img/symbol-defs.svg#icon-antenna-1"></use>
@@ -85,7 +101,7 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="peculiarities__box">
                 <svg class="ander-hero-logo" width="70" height="70">
                   <use href="./img/symbol-defs.svg#icon-clock-1"></use>
@@ -97,7 +113,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="card-set__item">
               <div class="peculiarities__box">
                 <svg class="ander-hero-logo" width="70" height="70">
                   <use href="./img/symbol-defs.svg#icon-diagram-1"></use>
@@ -108,7 +124,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="peculiarities__box">
                 <svg class="ander-hero-logo" width="70" height="70">
                   <use href="./img/symbol-defs.svg#icon-astronaut-1"></use>
@@ -125,23 +141,23 @@
 
     <!-- чим ми займаэмося -->
 
-      <section class="section-develop">
+       <section class="section-develop">
         <div class="container">
           <h2 class="section__heading">Чим ми займаємося</h2>
-          <ul class=" develop">
-            <li>
+          <ul class=" develop card-set">
+            <li class="develop__item card-set__item">
               <div class="develop__thumb">
                 <img src="./img/mbook-min.png" alt="mbook" width="370" height="294" />
                 <h3 class="develop__work">Десктопні додатки</h3>
               </div>
             </li>
-            <li>
+            <li class="develop__item card-set__item">
               <div class="develop__thumb">
                 <img src="./img/iphone-min.png" alt="iphone" width="370" height="294" />
                 <h3 class="develop__work">Мобільні додатки</h3>
               </div>
             </li>
-            <li>
+            <li class="develop__item card-set__item">
               <div class="develop__thumb">
                 <img src="./img/pl-min.png" alt="pl" width="370" height="294" />
                 <h3 class="develop__work">Дизайнерські рішення</h3>
@@ -154,8 +170,8 @@
       <div class="team--grey section">
         <section class="container">
           <h2 class="section__heading">Наша команда</h2>
-          <ul class="team">
-            <li class="team__cards">
+          <ul class="team card-set">
+            <li class="team__cards card-set__item">
               <img src="./img/igor-min.jpg" alt="igor" width="270" height="260" />
 
               <div class="team__about">
@@ -213,7 +229,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__cards">
+            <li class="team__cards card-set__item">
               <img src="./img/olga-min.jpg" alt="olga" width="270" height="260" />
 
               <div class="team__about">
@@ -271,7 +287,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__cards">
+            <li class="team__cards card-set__item">
               <img src="./img/mikola-min.jpg" alt="mikola" width="270" height="260" />
 
               <div class="team__about">
@@ -329,7 +345,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__cards">
+            <li class="team__cards card-set__item">
               <img src="./img/mikael-min.jpg" alt="mikael" width="270" height="260" />
 
               <div class="team__about">
@@ -391,46 +407,46 @@
         </section>
       </div>
       <!--постiйнi клiэнти-->
-      <section class="section">
+       <section class="section"> 
         <div class="container">
           <h2 class="section__heading">Постійні клієнти</h2>
-          <ul class="clients">
-            <li class="client__item">
+          <ul class="clients card-set">
+            <li class="client__item card-set__item">
               <a class="client__link" href="./index.html">
                 <svg class="client__logo" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
+            <li class="client__item card-set__item">
               <a class="client__link" href="./index.html">
                 <svg class="client__logo" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-taglinehere"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
+            <li class="client__item card-set__item">
               <a class="client__link" href="./index.html">
                 <svg class="client__logo" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
+            <li class="client__item card-set__item">
               <a class="client__link" href="./index.html">
                 <svg class="client__logo" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-foster"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
+            <li class="client__item card-set__item">
               <a class="client__link" href="./index.html">
                 <svg class="client__logo" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
+            <li class="client__item card-set__item">
               <a class="client__link" href="./index.html">
                 <svg class="client__logo" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-tagline"></use>
@@ -442,8 +458,8 @@
       </section>
     </main>
     <!--------------------footer--------------------------->
-
-    <footer class="footer">
+ 
+    <!-- <footer class="footer">
       <div class="footer__container container">
         <div>
           <a class="logo logo--bottom" href="index.html">Web<span class="logo__item logo--inverse">Studio</span></a>
@@ -531,7 +547,7 @@
             </form>
            
         </div>      
-    </footer>
+    </footer> -->
 
 
     <div class="backdrop is-hidden" data-modal>
@@ -583,6 +599,67 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

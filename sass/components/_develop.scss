@@ -1,6 +1,11 @@
 .develop{
-    display: flex;
-    gap: 30px; 
+
+     @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+    // display: flex;
+    // gap: 30px; 
   
   &__work {
     padding-top: 27px;
@@ -23,8 +28,17 @@
   &__thumb {
     position: relative;
   }
+
+  &__item{
+    position: relative;
+  }
 }
   .section-develop{
     padding-bottom: 94px;
   }
   
+  .section-develop .section__heading{
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
