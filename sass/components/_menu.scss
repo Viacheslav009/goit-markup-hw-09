@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
 
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -53,6 +53,10 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+
   width: 100vw;
   height: 100vh;
   padding: 32px;
@@ -78,6 +82,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -85,4 +91,8 @@
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+.mobile-sosials {
+  display: flex;
+  gap: 20px;
 }
