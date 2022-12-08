@@ -34,7 +34,7 @@
           <ul class="nav">
             <li class="nav__item">
               <a href="./index.html" class="nav__link curent">
-                <span class="nav__line">Студія</span></a
+                <span class="nav__line curent">Студія</span></a
               >
             </li>
             <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -56,7 +56,7 @@
           >
         </div>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg
+          <!-- <svg
             width="24"
             height="24"
             fill="currentColor"
@@ -66,6 +66,9 @@
               fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
+          </svg> -->
+          <svg class="menu-icon-burger" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
       </div>
@@ -611,7 +614,7 @@
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
+        <!-- <svg
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -621,11 +624,14 @@
             fill-rule="evenodd"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
             clip-rule="evenodd"></path>
+        </svg> -->
+        <svg class="menu-icon-close" width="40" height="40">
+          <use href="./img/symbol-defs.svg#icon-close_40px"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu">
-        <li class="mobile-menu-item">
+        <li class="mobile-menu-item curent">
           <a href="" class="mobile-menu-link curent">Студія</a>
         </li>
         <li class="mobile-menu-item">
@@ -640,14 +646,24 @@
           <a href="" class="mobile-contacts-link">+38 096 111 11 11</a>
         </li>
         <li class="mobile-contacts-item">
-          <a href="" class="mobile-contacts-link">info@devstudio.com</a>
+          <a href="" class="mobile-contacts-link">
+            <span class="mobile-contacts__mail">info@devstudio.com</span>
+          </a>
         </li>
       </ul>
       <ul class="mobile-sosials">
-        <li class="mobile-sosials-item"><a href="" class="mobile-sosials-link">Instagram</a></li>
-        <li class="mobile-sosials-item"><a href="" class="mobile-sosials-link">Twitter</a></li>
-        <li class="mobile-sosials-item"><a href="" class="mobile-sosials-link">Facebook</a></li>
-        <li class="mobile-sosials-item"><a href="" class="mobile-sosials-link">LinkedIn</a></li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">Instagram</a>
+        </li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">Twitter</a>
+        </li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">Facebook</a>
+        </li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">LinkedIn</a>
+        </li>
       </ul>
     </div>
 
