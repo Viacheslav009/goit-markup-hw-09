@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
 
     <!--custom styles-->
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <!--fonts-family-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,24 +31,47 @@
         <a class="logo logo--right" href="index.html">Web<span class="logo__item">Studio</span></a>
         <nav>
           <ul class="nav">
-            <li class="nav__item"><a href="./index.html" class="nav__link ">Студія</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link curent"><span class="nav__line">Портфоліо</span></a></li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link curent"
+                ><span class="nav__line curent">Портфоліо</span>
+              </a>
+            </li>
             <li class="nav__item"><a href="./index.html" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
-      
+
         <div class="contacts">
           <a href="info@devstudio.com" class="contacts__item">
             <svg class="contacts__logo" width="16" height="12">
-              <use href="./img/symbol-defs.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-
+              <use href="./img/symbol-defs.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
 
           <a href="tel:+380961111111" class="contacts__item">
             <svg class="contacts__logo" width="10" height="16">
-              <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
+              <use href="./img/symbol-defs.svg#icon-smartphone"></use></svg
+            >+38 096 111 11 11</a
+          >
         </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <!-- <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg> -->
+          <svg class="menu-icon-burger" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -58,16 +81,16 @@
       <section class="section">
         <div class="container">
           <!-- <h1>filters</h1> -->
-          <ul class="filters">
+          <!-- <ul class="filters">
             <li><button type="button" class="filters__btn">Усі</button></li>
             <li><button type="button" class="filters__btn">Веб-сайти</button></li>
             <li><button type="button" class="filters__btn">Додатки</button></li>
             <li><button type="button" class="filters__btn">Дизайн</button></li>
             <li><button type="button" class="filters__btn">Маркетинг</button></li>
-          </ul>
+          </ul> -->
           <!-- <h2>portfolio</h2> -->
-          <ul class="portfolio">
-            <li>
+          <ul class="portfolio card-set">
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/tehno.png" alt="tehno" />
@@ -85,7 +108,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/basket.png" alt="basket" />
@@ -103,7 +126,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/seafood.png" alt="seafood" />
@@ -121,7 +144,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/prime.png" alt="prime" />
@@ -139,7 +162,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/boxes.png" alt="boxes" />
@@ -157,7 +180,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/borders.png" alt="borders" />
@@ -175,7 +198,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/book.png" alt="book" />
@@ -193,7 +216,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/label.png" alt="label" />
@@ -211,7 +234,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="card-set__item">
               <div class="portfolio__cards">
                 <div class="portfolio__box">
                   <img src="./img/growing.png" alt="growing" />
@@ -234,97 +257,169 @@
       </section>
     </main>
     <!-----------------------footer-------------------------------------->
+
     <footer class="footer">
       <div class="footer__container container">
-        <div>
-          <a class="logo logo--bottom" href="index.html">Web<span class="logo__item logo--inverse">Studio</span></a>
-          <address>
-            <ul class="footer__items">
-              <li class="footer__list">
+        <div class="footer__mobile">
+          <div>
+            <a class="logo logo--bottom" href="index.html"
+              >Web<span class="logo__item logo--inverse">Studio</span></a
+            >
+            <address>
+              <ul class="footer__items">
+                <li class="footer__list">
+                  <a
+                    class="footer__adress"
+                    href="https://goo.gl/maps/oGdaYsp25zFcmJvW9"
+                    target="_blank"
+                    rel="nofolow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__info" href="info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div>
+            <h3 class="footer__heading">приєднуйтесь</h3>
+            <ul class="socials">
+              <li class="socials__item">
                 <a
-                  class="footer__adress"
-                  href="https://goo.gl/maps/oGdaYsp25zFcmJvW9"
+                  class="socials__link socials__link--white"
+                  href="htpps://instagram.com"
                   target="_blank"
-                  rel="nofolow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  rel="nooper noreferrer"
+                  aria-label="Instagram icon">
+                  <svg class="socials__icon footer__social" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__list">
-                <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--white"
+                  href="htpps://instagram.com"
+                  target="_blank"
+                  rel="nooper noreferrer"
+                  aria-label="Instagram icon">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__list">
-                <a class="footer__info" href="info@devstudio.com">info@devstudio.com</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--white"
+                  href="htpps://instagram.com"
+                  target="_blank"
+                  rel="nooper noreferrer"
+                  aria-label="Instagram icon">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--white"
+                  href="htpps://instagram.com"
+                  target="_blank"
+                  rel="nooper noreferrer"
+                  aria-label="Instagram icon">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div >
-          <h3 class="footer__heading">приєднуйтесь</h3>
-          <ul class="socials">
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--white "
-                href="htpps://instagram.com"
-                target="_blank"
-                rel="nooper noreferrer"
-                aria-label="Instagram icon">
-                <svg class="socials__icon footer__social" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item ">
-              <a
-                class="socials__link socials__link--white"
-                href="htpps://instagram.com"
-                target="_blank"
-                rel="nooper noreferrer"
-                aria-label="Instagram icon">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--white"
-                href="htpps://instagram.com"
-                target="_blank"
-                rel="nooper noreferrer"
-                aria-label="Instagram icon">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--white"
-                href="htpps://instagram.com"
-                target="_blank"
-                rel="nooper noreferrer"
-                aria-label="Instagram icon">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-          
-            <form class="modal-form" name="modal_form"> 
-              <label class="footer__label" for="user_name">підпишіться на розсилку</label>
-             <div class="footer__item">
-               <input class="footer__field" type="email" name="user_email" id="user_email" placeholder="E-mail" />
-                <button class="basic-button basic-button--logo" type="submit">
-              Підписатися</button>
-             </div>
-            </form>
-           
-        </div>      
+
+        <form class="modal-form" name="modal_form">
+          <label class="footer__label" for="user_name">підпишіться на розсилку</label>
+          <div class="footer__item">
+            <input
+              class="footer__field"
+              type="email"
+              name="user_email"
+              id="user_email"
+              placeholder="E-mail" />
+            <button class="basic-button basic-button--logo" type="submit">Підписатися</button>
+          </div>
+        </form>
+      </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <!-- <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24">
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg> -->
+        <svg class="menu-icon-close" width="40" height="40">
+          <use href="./img/symbol-defs.svg#icon-close_40px"></use>
+        </svg>
+      </button>
 
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link">
+            <span class="menu-curent">Студія</span>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link">
+            <span class="mobile-contacts__tell">+38 096 111 11 11</span></a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link">
+            <span class="mobile-contacts__mail">info@devstudio.com</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-sosials">
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">Instagram</a>
+        </li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">Twitter</a>
+        </li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">Facebook</a>
+        </li>
+        <li class="mobile-sosials-item">
+          <a href="" class="mobile-sosials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
-    
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

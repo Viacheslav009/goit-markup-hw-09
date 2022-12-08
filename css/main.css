@@ -1149,13 +1149,17 @@ a {
 }
 
 .portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  margin: 0px;
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    --items: 3;
+  }
 }
 
 .portfolio__box {
@@ -1306,7 +1310,7 @@ a {
 }
 
 .menu-curemt {
-  color: var(--accent);
+  color: white;
 }
 
 .mobile-menu-link {
@@ -1316,7 +1320,7 @@ a {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: currentColor;
+  color: #212121;
 }
 
 .mobile-contacts {

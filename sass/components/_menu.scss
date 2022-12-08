@@ -113,7 +113,7 @@
   }
 }
 .menu-curemt {
-  color: var(--accent);
+  color: white;
 }
 .mobile-menu-link {
   font-family: 'Roboto';
@@ -122,8 +122,8 @@
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: currentColor;
-  // color: #212121;
+  // color: currentColor;
+  color: #212121;
 }
 
 .mobile-contacts {
