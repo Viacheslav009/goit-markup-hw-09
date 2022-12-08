@@ -1,11 +1,27 @@
 .filters {
   display: flex;
-  justify-content: center;
   gap: 8px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  margin-right: 100px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-right: 0;
+  }
 
   margin-bottom: 50px;
-  margin-top: 0px;
+  // margin-top: 0px;
 }
+
+// .filters__btn--crutch {
+//   @media screen and (max-width: 767px) {
+//     margin-left: auto;
+//   }
+// }
+
 .portfolio {
   // display: flex;
   // flex-wrap: wrap;
@@ -20,6 +36,9 @@
   @media screen and (min-width: 1200px) {
     --items: 3;
   }
+  // align-items: stretch;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .portfolio__box {
