@@ -1305,7 +1305,7 @@ a {
   margin-bottom: 32px;
 }
 
-.curemt {
+.menu-curemt {
   color: var(--accent);
 }
 
@@ -1316,7 +1316,7 @@ a {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: currentColor;
 }
 
 .mobile-contacts {
@@ -1324,15 +1324,21 @@ a {
 }
 
 .mobile-contacts-link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: currentColor;
 }
 
 .mobile-contacts-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-contacts__tell {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .mobile-sosials {
