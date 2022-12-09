@@ -113,10 +113,10 @@
   }
 }
 .mobile-menu-link {
-  @:current {color: var(--accent)
+  :current(span) {
+    color: var(--accent);
   }
-
-  
+}
 
 .mobile-menu-link {
   font-family: 'Roboto';
