@@ -551,7 +551,7 @@ a {
   color: var(--accent);
 }
 
-.nav__link .curent {
+.nav__link .current {
   color: var(--accent);
 }
 
@@ -1163,11 +1163,6 @@ a {
 
 .portfolio {
   --items: 1;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .portfolio {
@@ -1326,7 +1321,7 @@ a {
   margin-bottom: 32px;
 }
 
-.mobile-menu-link :current(span) {
+.mobile-menu-link.current {
   color: var(--accent);
 }
 

@@ -112,10 +112,8 @@
     margin-bottom: 32px;
   }
 }
-.mobile-menu-link {
-  :current(span) {
-    color: var(--accent);
-  }
+.mobile-menu-link.current {
+  color: var(--accent);
 }
 
 .mobile-menu-link {
