@@ -112,9 +112,12 @@
     margin-bottom: 32px;
   }
 }
-.mobile-menu__curemt {
-  color: var(--accent);
-}
+.mobile-menu-link {
+  @:current {color: var(--accent)
+  }
+
+  
+
 .mobile-menu-link {
   font-family: 'Roboto';
   font-style: normal;

@@ -1326,7 +1326,7 @@ a {
   margin-bottom: 32px;
 }
 
-.mobile-menu__curemt {
+.mobile-menu-link.mobile-menu__curemt {
   color: var(--accent);
 }
 
