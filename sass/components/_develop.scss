@@ -1,12 +1,11 @@
-.develop{
-
-     @media screen and (max-width: 1199px) {
+.develop {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 
-    // display: flex;
-    // gap: 30px; 
-  
+  // display: flex;
+  // gap: 30px;
+
   &__work {
     padding-top: 27px;
     padding-bottom: 27px;
@@ -16,7 +15,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  
+
     color: var(--white);
     background: rgba(47, 48, 58, 0.8);
     position: absolute;
@@ -29,16 +28,16 @@
     position: relative;
   }
 
-  &__item{
+  &__item {
     position: relative;
   }
 }
-  .section-develop{
-    padding-bottom: 94px;
+.section-develop {
+  padding-bottom: 0px;
+}
+
+.section-develop .section__heading {
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
-  
-  .section-develop .section__heading{
-    @media screen and (max-width: 1199px) {
-      display: none;
-    }
-  }
+}
