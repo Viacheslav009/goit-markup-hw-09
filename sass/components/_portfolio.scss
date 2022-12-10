@@ -74,3 +74,12 @@
     border-radius: 4px;
   }
 }
+
+.portfolio__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__about {
+  flex-grow: 1;
+}
