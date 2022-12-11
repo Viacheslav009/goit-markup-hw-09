@@ -1,30 +1,21 @@
 .peculiarities {
-    // display: flex;
-    // gap: 30px; 
-    /* padding-top: 94px; */
-    --items: 1;
+  // display: flex;
+  // gap: 30px;
+  /* padding-top: 94px; */
+  --items: 1;
 
-    @media screen and (max-width: 767px) {
-      
-      text-align: center;
-    }
-    
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
 
-    @media screen and (min-width: 768px) {
-      --items: 2;
-      
-    }
-  
-    @media screen and (min-width: 1200px) {
-      --items: 4;
-    }
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
 
-
-  &__box{
+  &__box {
     // width: 270px;
     // height: 120px;
-    
-  
+
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -33,17 +24,20 @@
     align-items: center;
     justify-content: center;
   }
-  &__title{
+  &__title {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-  
+
     color: var(--primary-text-color);
   }
-  
-  &__subtitle{
+
+  &__subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -52,7 +46,7 @@
   }
 }
 
-.ander-hero-logo{
+.ander-hero-logo {
   margin-top: 25px;
   margin-bottom: 25px;
 }

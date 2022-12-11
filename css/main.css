@@ -271,19 +271,31 @@
 }
 
 .modal-form-link {
-  font-size: 14px;
-  line-height: 1.7142857143 px;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent);
   text-underline-offset: 3px;
   text-decoration: underline;
 }
+@media screen and (min-width: 1200px) {
+  .modal-form-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 
 .modal-form-agreement {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143 px;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-form-btn {
@@ -743,11 +755,6 @@ a {
   /* padding-top: 94px; */
   --items: 1;
 }
-@media screen and (max-width: 767px) {
-  .peculiarities {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 768px) {
   .peculiarities {
     --items: 2;
@@ -780,6 +787,11 @@ a {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 767px) {
+  .peculiarities__title {
+    text-align: center;
+  }
 }
 .peculiarities__subtitle {
   font-weight: 400;
@@ -951,7 +963,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) and (min-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__link {
     width: 226px;
   }
@@ -1007,7 +1019,7 @@ a {
 }
 
 .section-develop {
-  padding-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1094,6 +1106,9 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1160,6 +1175,11 @@ a {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__field {
+    width: 358px;
+  }
+}
 
 .footer__field:focus, .footer__field:hover {
   outline-color: var(--accent);
@@ -1204,6 +1224,9 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
