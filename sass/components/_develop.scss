@@ -1,7 +1,7 @@
 .develop {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   display: none;
+  // }
 
   // display: flex;
   // gap: 30px;
@@ -33,11 +33,14 @@
   }
 }
 .section-develop {
-  padding-bottom: 94px;
-}
-
-.section-develop .section__heading {
   @media screen and (max-width: 1199px) {
     display: none;
   }
+  padding-bottom: 94px;
 }
+
+// .section-develop .section__heading {
+//   @media screen and (max-width: 1199px) {
+//     display: none;
+//   }
+// }

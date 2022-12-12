@@ -1001,11 +1001,6 @@ a {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
-  .develop {
-    display: none;
-  }
-}
 .develop__work {
   padding-top: 27px;
   padding-bottom: 27px;
@@ -1033,9 +1028,8 @@ a {
 .section-develop {
   padding-bottom: 94px;
 }
-
 @media screen and (max-width: 1199px) {
-  .section-develop .section__heading {
+  .section-develop {
     display: none;
   }
 }
